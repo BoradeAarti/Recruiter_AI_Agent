@@ -2,7 +2,7 @@
 
 > Paste a JD → set location & lead count → get scored candidate cards instantly.
 
-Powered by **Groq** (llama-3.3-70b) for JD parsing & AI scoring, **SerpApi** for live LinkedIn search, and **Proxycurl** for deep profile enrichment.
+Powered by **Groq** (llama-3.3-70b) for JD parsing & AI scoring, live LinkedIn search, and deep profile enrichment.
 
 ---
 
@@ -36,12 +36,8 @@ http://localhost:5000
 | Service | Free Tier | Get Key |
 |---------|-----------|---------|
 | **Groq** (required) | Very generous — fast LLaMA-3.3-70b | [console.groq.com](https://console.groq.com) |
-| **SerpApi** (recommended) | 100 searches/month free | [serpapi.com](https://serpapi.com) |
-| **Proxycurl** (optional) | Pay-per-use ~$0.01/profile | [nubela.co/proxycurl](https://nubela.co/proxycurl) |
 
-> **No SerpApi / Proxycurl key?** App runs in **demo mode** with realistic mock LinkedIn profiles — perfect for testing the UI and Groq scoring.
 
----
 
 ## How It Works
 
@@ -129,6 +125,6 @@ recruiter/
 ├── backend.py        ← Flask API + Groq + SerpApi + Proxycurl
 ├── index.html        ← Full-stack dark UI (no build step)
 ├── requirements.txt
-├── .env.example      ← Copy to .env and add keys
+├── .env      ← Copy to .env and add keys
 └── README.md
 ```
